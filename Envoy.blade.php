@@ -2,7 +2,7 @@
 @servers(['production' => ['vps@103.187.147.41']])
  
 @setup
-    $repo = 'https://github.com/sisonetwo/laravel-envoy-github-action.git';
+    $repo = 'git@github.com:sisonetwo/laravel-envoy-gitub-action.git';
     $appDir = '/var/www';
     $branch = 'master';
 
@@ -47,6 +47,8 @@
     ln -nfs {{ $deployment }} {{ $serve }}
 
     chown -R www-data: /var/www
+ 
+    chown -R www-data: /var/www/sources/
 
     systemctl restart php8.0-fpm
 
