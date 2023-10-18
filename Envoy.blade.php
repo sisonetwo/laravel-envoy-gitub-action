@@ -1,5 +1,5 @@
 
-@servers(['production' => ['vps@103.187.147.41']]
+@servers(['production' => ['vps@103.187.147.41']])
  
 @setup
     $repo = 'https://github.com/sisonetwo/laravel-envoy-github-action.git';
