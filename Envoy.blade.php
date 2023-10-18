@@ -2,7 +2,7 @@
 @servers(['production' => ['vps@103.187.147.41']])
  
 @setup
-    $repo = 'git@github.com:sisonetwo/laravel-envoy-gitub-action.git';
+    $repo = 'https://github.com/sisonetwo/laravel-envoy-gitub-action.git';
     $appDir = '/var/www';
     $branch = 'master';
 
