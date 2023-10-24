@@ -1,5 +1,5 @@
 
-@servers(['production' => ['vps@103.187.147.41']])
+@servers(['production' => ['vps@103.250.11.190']])
  
 @setup
     $repo = 'https://github.com/sisonetwo/laravel-envoy-gitub-action.git';
@@ -48,8 +48,6 @@
 
     chown -R www-data: /var/www
  
-    chown -R www-data: /var/www/sources/
-
     systemctl restart php8.0-fpm
 
     systemctl restart nginx
