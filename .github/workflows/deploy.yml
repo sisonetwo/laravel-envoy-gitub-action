@@ -23,5 +23,6 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-host: ${{ secrets.SSH_HOST }}
+          ssh-port: ${{ secret.SSH_PORT }}
       - name: Deploy Environment
         run: ./vendor/bin/envoy run deploy
